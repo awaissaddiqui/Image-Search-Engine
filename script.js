@@ -11,7 +11,8 @@ const loadPics = async () => {
         .then((res) => res.json())
         .then((json) => {
             const pics = json.results.map(res => {
-                console.log(res.urls.raw)
+                //console.log(pics)
+
                     const img = document.createElement("img")
                     img.setAttribute("src",res.urls.raw)
                     img.setAttribute("width", 300)
